@@ -11,11 +11,11 @@ const Index = () => {
       href: "https://lovable.dev/projects/33297f90-cd30-49a1-80c9-f8154b71404f",
     },
     {
-      title: "Project Two",
-      description: "Another concise description. Replace with your actual work.",
+      title: "Realistic Car Showcase",
+      description: "An interactive 3D-style showcase highlighting realistic car visuals and details.",
       year: "2025",
-      tag: "Design",
-      href: "#",
+      tag: "Showcase",
+      href: "https://lovable.dev/projects/648c73dd-4e66-456b-b216-d4aece31c2ef",
     },
     {
       title: "Project Three",
