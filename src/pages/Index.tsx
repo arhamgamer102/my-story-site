@@ -30,7 +30,7 @@ const Index = () => {
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#" className="font-serif text-xl">Your Name</a>
+          <a href="#" className="font-serif text-xl">Arham Imran</a>
           <div className="hidden sm:flex items-center gap-8 text-sm">
             <a href="#about" className="hover:text-accent transition-colors">About</a>
             <a href="#work" className="hover:text-accent transition-colors">Work</a>
@@ -47,7 +47,7 @@ const Index = () => {
             Available for new work
           </p>
           <h1 className="font-serif text-6xl sm:text-7xl md:text-8xl leading-[0.95] mb-8 text-balance">
-            Hi, I'm <em className="text-accent">Your Name</em>.
+            Hi, I'm <em className="text-accent">Arham Imran</em>.
             <br />
             I build things for the web.
           </h1>
@@ -176,7 +176,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Arham Imran. All rights reserved.</p>
           <p className="font-serif italic">Designed & built with care.</p>
         </div>
       </footer>
