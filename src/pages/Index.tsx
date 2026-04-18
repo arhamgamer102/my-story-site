@@ -18,11 +18,11 @@ const Index = () => {
       href: "https://lovable.dev/projects/648c73dd-4e66-456b-b216-d4aece31c2ef",
     },
     {
-      title: "Project Three",
-      description: "Tell the visitor what makes this project unique in one line.",
+      title: "Pakistan Retro Games",
+      description: "A celebration of retro gaming with a Pakistani twist — themed games and visuals.",
       year: "2025",
-      tag: "Open Source",
-      href: "#",
+      tag: "Web App",
+      href: "https://lovable.dev/projects/44c2fafa-fd2c-4851-abb2-b6dc4bf80962",
     },
   ];
 
