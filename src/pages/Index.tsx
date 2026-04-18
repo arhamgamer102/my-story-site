@@ -4,22 +4,25 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   const projects = [
     {
-      title: "Project One",
-      description: "A short sentence about what this project does and why it matters.",
-      year: "2024",
+      title: "Retro Game Hub",
+      description: "A nostalgic hub for browsing and playing classic retro games in the browser.",
+      year: "2025",
       tag: "Web App",
+      href: "https://lovable.dev/projects/33297f90-cd30-49a1-80c9-f8154b71404f",
     },
     {
       title: "Project Two",
       description: "Another concise description. Replace with your actual work.",
-      year: "2024",
+      year: "2025",
       tag: "Design",
+      href: "#",
     },
     {
       title: "Project Three",
       description: "Tell the visitor what makes this project unique in one line.",
-      year: "2023",
+      year: "2025",
       tag: "Open Source",
+      href: "#",
     },
   ];
 
@@ -120,7 +123,9 @@ const Index = () => {
             {projects.map((project, i) => (
               <a
                 key={i}
-                href="#"
+                href={project.href}
+                target={project.href.startsWith("http") ? "_blank" : undefined}
+                rel={project.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="group block py-8 border-t border-border hover:border-accent transition-colors"
               >
                 <div className="grid md:grid-cols-12 gap-4 items-baseline">
