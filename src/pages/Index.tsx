@@ -159,8 +159,8 @@ const Index = () => {
             Have a project in mind, or just want to say hi? My inbox is always open.
           </p>
           <Button size="lg" className="rounded-full" asChild>
-            <a href="mailto:hello@yourname.com">
-              <Mail className="mr-2" /> hello@yourname.com
+            <a href="mailto:arhamimraninm@gmail.com">
+              <Mail className="mr-2" /> arhamimraninm@gmail.com
             </a>
           </Button>
 
