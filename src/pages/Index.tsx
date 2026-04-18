@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowUpRight, Mail, Github, Linkedin, Twitter, Code2, Palette, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -28,6 +28,24 @@ const Index = () => {
 
   const skills = ["TypeScript", "React", "Node.js", "Design Systems", "UI/UX", "Tailwind CSS"];
 
+  const specialties = [
+    {
+      icon: Code2,
+      title: "Web Development",
+      description: "Building fast, modern, and responsive websites with React, TypeScript, and clean code.",
+    },
+    {
+      icon: Palette,
+      title: "UI / UX Design",
+      description: "Designing interfaces that feel intuitive, polished, and delightful to use.",
+    },
+    {
+      icon: Zap,
+      title: "Rapid Prototyping",
+      description: "Turning ideas into working products quickly — from concept to live demo.",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
@@ -36,6 +54,7 @@ const Index = () => {
           <a href="#" className="font-serif text-xl">Arham Imran</a>
           <div className="hidden sm:flex items-center gap-8 text-sm">
             <a href="#about" className="hover:text-accent transition-colors">About</a>
+            <a href="#specialties" className="hover:text-accent transition-colors">Specialties</a>
             <a href="#work" className="hover:text-accent transition-colors">Work</a>
             <a href="#contact" className="hover:text-accent transition-colors">Contact</a>
           </div>
@@ -100,6 +119,40 @@ const Index = () => {
                   </span>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Specialties */}
+      <section id="specialties" className="py-24 px-6 border-t border-border">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-12">
+          <div className="md:col-span-1">
+            <p className="text-sm uppercase tracking-wider text-muted-foreground">Specialties</p>
+          </div>
+          <div className="md:col-span-2 space-y-10">
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
+              What I do best.
+            </h2>
+            <div className="grid sm:grid-cols-1 gap-6">
+              {specialties.map((s) => (
+                <div
+                  key={s.title}
+                  className="group p-6 border border-border rounded-2xl hover:border-accent transition-colors"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 rounded-xl border border-border flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-colors">
+                      <s.icon className="w-5 h-5" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-serif text-2xl mb-2 group-hover:text-accent transition-colors">
+                        {s.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">{s.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
